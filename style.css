@@ -54,7 +54,8 @@ align-items: center;
 gap: 5px;
 }
 .reset-btn,.auto-play-btn{
- background-color:white;
+color:black;
+background-color:white;
 border: none;
 font-size: 15px;
 font-weight: 800;
