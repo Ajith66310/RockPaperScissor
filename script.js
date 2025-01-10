@@ -92,7 +92,7 @@ function playerMoved(playerMove) {
 function updateScoreElement() {
   document.querySelector(
     ".js-score"
-  ).innerHTML = `<span style="color:green;">Wins:${score.wins}</span> Ties:${score.Ties} <span style="color:red;">Loses:${score.losses}</span> `;
+  ).innerHTML = `<span style="color:green;">Wins:${score.wins}</span> Ties:${score.Ties} <span style="color:red;">Losses:${score.losses}</span> `;
 }
 function computerPlay() {
   let computerMove = "";
