@@ -26,13 +26,13 @@ document.querySelector(".auto-play-button").addEventListener("click", () => {
 });
 
 document.querySelector(".rock-btn").addEventListener("click", () => {
-  playerMoved("Rock");
+  playerMoved("rock");
 });
 document.querySelector(".paper-btn").addEventListener("click", () => {
-  playerMoved("Paper");
+  playerMoved("paper");
 });
 document.querySelector(".scissor-btn").addEventListener("click", () => {
-  playerMoved("Scissor");
+  playerMoved("scissor");
 });
 document.querySelector(".reset-score-btn").addEventListener("click", () => {
   score.wins = 0;
@@ -46,28 +46,28 @@ updateScoreElement();
 function playerMoved(playerMove) {
   const computerMove = computerPlay();
   let result = "";
-  if (playerMove === "Scissor") {
-    if (computerMove === "Rock") {
+  if (playerMove === "scissor") {
+    if (computerMove === "rock") {
       result = "You Lose";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "You Win";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "Draw";
     }
-  } else if (playerMove === "Rock") {
-    if (computerMove === "Rock") {
+  } else if (playerMove === "rock") {
+    if (computerMove === "rock") {
       result = "Draw";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "You Lose";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "You Win";
     }
-  } else if (playerMove === "Paper") {
-    if (computerMove === "Rock") {
+  } else if (playerMove === "paper") {
+    if (computerMove === "rock") {
       result = "You Win";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "Draw";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "You Lose";
     }
   }
