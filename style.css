@@ -53,7 +53,7 @@ justify-content: center;
 align-items: center;
 gap: 5px;
 }
-.reset-score-btn,.auto-play-button{
+.reset-btn,.auto-play-btn{
  background-color:white;
 border: none;
 font-size: 15px;
@@ -61,11 +61,11 @@ font-weight: 800;
 border-radius: 50px;
 cursor: pointer;
 }
-.reset-score-btn:hover {
+.reset-btn:hover {
   background-color: gold;
   color: rgb(25, 25, 25);
 }
-.auto-play-button:hover{
+.auto-play-btn:hover{
   background-color:gold;
   color: rgb(25, 25, 25);
 }
