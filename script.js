@@ -3,13 +3,6 @@ let score = JSON.parse(localStorage.getItem("score")) || {
   losses: 0,
   Ties: 0,
 };
-//     if(score === null){
-// score = {
-//   wins:0,
-//   losses:0,
-//   Ties:0
-// }
-//     }
 let intervalId;
 let isAutoPlaying = false;
 function autoPlay() {
@@ -81,28 +74,28 @@ updateScoreElement();
 function playerMoved(playerMove) {
   const computerMove = computerPlay();
   let result = "";
-  if (playerMove === "Scissor") {
-    if (computerMove === "Rock") {
+  if (playerMove === "scissor") {
+    if (computerMove === "rock") {
       result = "You Lose";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "You Win";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "Draw";
     }
-  } else if (playerMove === "Rock") {
-    if (computerMove === "Rock") {
+  } else if (playerMove === "rock") {
+    if (computerMove === "rock") {
       result = "Draw";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "You Lose";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "You Win";
     }
-  } else if (playerMove === "Paper") {
-    if (computerMove === "Rock") {
+  } else if (playerMove === "paper") {
+    if (computerMove === "rock") {
       result = "You Win";
-    } else if (computerMove === "Paper") {
+    } else if (computerMove === "paper") {
       result = "Draw";
-    } else if (computerMove === "Scissor") {
+    } else if (computerMove === "scissor") {
       result = "You Lose";
     }
   }
@@ -133,11 +126,11 @@ function computerPlay() {
   let computerMove = "";
   const randomNum = Math.random();
   if (randomNum >= 0 && randomNum < 1 / 3) {
-    computerMove = "Rock";
+    computerMove = "rock";
   } else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
-    computerMove = "Paper";
+    computerMove = "paper";
   } else if (randomNum >= 2 / 3 && randomNum <= 1) {
-    computerMove = "Scissor";
+    computerMove = "scissor";
   }
   return computerMove;
 }
