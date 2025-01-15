@@ -19,9 +19,11 @@ document.querySelector(".auto-play-button").addEventListener("click", () => {
       playerMoved(playerMove);
     }, 1000);
     isAutoPlaying = true;
+    document.querySelector('.auto-play-button').innerHTML = 'Stop Playing';
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+    document.querySelector('.auto-play-button').innerHTML = 'Auto Play';
   }
 });
 
