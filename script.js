@@ -26,13 +26,13 @@ document.querySelector(".reset-score-btn").addEventListener("click", () => {
   confirmationMessage();
 });
 document.querySelector(".rock-btn").addEventListener("click", () => {
-  playerMoved("Rock");
+  playerMoved("rock");
 });
 document.querySelector(".paper-btn").addEventListener("click", () => {
-  playerMoved("Paper");
+  playerMoved("paper");
 });
 document.querySelector(".scissor-btn").addEventListener("click", () => {
-  playerMoved("Scissor");
+  playerMoved("scissor");
 });
 function resetBtn() {
   confirmationMessage();
