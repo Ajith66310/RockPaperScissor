@@ -53,20 +53,40 @@ justify-content: center;
 align-items: center;
 gap: 5px;
 }
-.reset-btn,.auto-play-btn{
-color:black;
-background-color:white;
+.reset-score-btn,.auto-play-button{
+ background-color:white;
 border: none;
 font-size: 15px;
 font-weight: 800;
 border-radius: 50px;
 cursor: pointer;
 }
-.reset-btn:hover {
+.reset-score-btn:hover {
   background-color: gold;
   color: rgb(25, 25, 25);
 }
-.auto-play-btn:hover{
+.auto-play-button:hover{
+  background-color:gold;
+  color: rgb(25, 25, 25);
+}
+.confirm-msg{
+  display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+gap: 5px;
+}
+.yesBtn,.noBtn{
+  border:none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.yesBtn:hover{
+  background-color:gold;
+  color: rgb(25, 25, 25);
+}
+.noBtn:hover{
   background-color:gold;
   color: rgb(25, 25, 25);
 }
