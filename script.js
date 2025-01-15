@@ -45,7 +45,7 @@ function resetBtn() {
 function confirmationMessage() {
   document.querySelector(
     ".confirm-msg"
-  ).innerHTML = `you want to reset the score ? <button class="yesBtn js-yesBtn">Yes</button><button class="noBtn js-noBtn">No</button>`;
+  ).innerHTML = `You want to reset the score ? <button class="yesBtn js-yesBtn">Yes</button><button class="noBtn js-noBtn">No</button>`;
   document.querySelector(".js-yesBtn").addEventListener("click", () => {
     resetBtn();
     resetMsg();
